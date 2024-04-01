@@ -39,6 +39,12 @@ typedef struct instruction_s
         void (*f)(stack_t **stack, unsigned int line_number);
 } 
 
-void f_nop(stack_t **head, unsigned int counter );
+void f_nop(stack_t **head, unsigned int count);
+void f_div(stack_t **head, unsigned int count);
+void f_mod(stack_t **head, unsigned int count;
+void f_add(stack_t **head, unsigned int count);
+void f_pall(stack_t **head, unsigned int count);
+void f_pstr(stack_t **head, unsigned int count);
+void f_rotr(stack_t **head, __attributr__((unused)) unsigned int count);
 
 #endif
