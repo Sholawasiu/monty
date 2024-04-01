@@ -1,27 +1,25 @@
 #include <main.h>
-#define SIZE 100
 
 
 int push(int element)
 {
-	int stack[SIZE];
+	int stack[];
 	int top = -1;
 	int line_number = 4;
 	if (top == -1 || top !== atoi(element))
 	{
-		fprintf(stdout, "L%d: usage: push integer\n", line_number );
-		
+		fprintf(stdout, "L%d: usage: push integer\n", line_number);
 		exit(EXIT_FAILURE);
 	}
 	else
 	{
-		top ++;
+		top++;
 		top = stack[element];
 	}
 }	
 
 
-int pall()
+int pall(void)
 {
 	int stack[];
 	int top = -1;
