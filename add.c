@@ -7,7 +7,7 @@
  * Return: return nothinh
  */
 
-void f_add(stack_t, unsigned int counr)
+void f_add(stack_t **head, unsigned int count)
 {
 	stack_t *head;
 	int len = 0, aux;

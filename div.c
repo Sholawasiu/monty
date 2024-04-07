@@ -10,10 +10,10 @@
 void f_div(stack_t **head, unsigned int count)
 {
 	stack_t *h;
-	int len = 0; aux;
+	int len = 0, aux;
 
 	h = *head;
-	while(h)
+	while (h)
 	{
 		h = h->next;
 		len++;
@@ -35,7 +35,7 @@ void f_div(stack_t **head, unsigned int count)
 		free_stack(*head);
 		exit(EXIT_FAILURE);
 	}
-	aux = h->next-> / h->n;
+	aux = h->next / h->n;
 	h->next->n = aux;
 	*head = h->next;
 	free(h);
