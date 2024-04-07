@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 	}
 	file = fopen(argv[1], "r");
 	bus.file = file;
-	if(!file)
+	if (!file)
 	{
 		fprintf()
 
