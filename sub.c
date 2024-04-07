@@ -20,7 +20,7 @@ void (stack_t **head, unsigned int count)
 		fprintf(stderr, "L%d: can't subtract stack too short\n", count);
 		fclose(bus.file);
 		free(bus.content);
-		free-stack(*head);
+		free_stack(*head);
 		exit(EXIT_FAILURE);
 	}
 	aux = *head;
