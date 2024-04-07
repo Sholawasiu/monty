@@ -1,11 +1,17 @@
+#define _POSIX_C_SOURCE 200809L
+#include <stdio.h>
+
 #include "monty.h"
+
 bus_t bus = {NULL, NULL, NULL, 0};
+
 /**
 * main - monty code interpreter
 * @argc: number of arguments
 * @argv: monty file location
 * Return: 0 on success
 */
+
 int main(int argc, char *argv[])
 {
 	char *content;
