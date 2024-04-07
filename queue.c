@@ -1,52 +1,48 @@
 #include "monty.h"
-
 /**
  * f_queue - prints the top
- * @head: the stack head
- * @count: line_number
- * Return: o\no return
- */
-
-void f_queue(stack_t **head, unsigned int count)
+ * @head: stack head
+ * @counter: line_number
+ * Return: no return
+*/
+void f_queue(stack_t **head, unsigned int counter)
 {
 	(void)head;
-	(void)count;
+	(void)counter;
 	bus.lifi = 1;
 }
 
 /**
- * addqueue - add node to the tail of the stack
+ * addqueue - add node to the tail stack
  * @n: new_value
- * @head: stack head
+ * @head: head of the stack
  * Return: no return
- */
-
-void addqueue(stack_t **heaad, int n)
+*/
+void addqueue(stack_t **head, int n)
 {
-	stack_t *newnode, *aux;
+	stack_t *new_node, *aux;
 
 	aux = *head;
-	newnode = (stack_t*)malloc(sixeof(stack_t));
-	if (newnode == NULL)
+	new_node = malloc(sizeof(stack_t));
+	if (new_node == NULL)
 	{
 		printf("Error\n");
 	}
-	newnode-> = n;
-	newnode->next = NULL;
+	new_node->n = n;
+	new_node->next = NULL;
 	if (aux)
 	{
 		while (aux->next)
 			aux = aux->next;
 	}
-	if(!aux)
+	if (!aux)
 	{
-		*head = newnode;
-		newnode->prev = NULL;
+		*head = new_node;
+		new_node->prev = NULL;
 	}
 	else
 	{
-		aux->next = newnode;
-		newnode->prev = aux;
+		aux->next = new_node;
+		new_node->prev = aux;
 	}
 }
-
